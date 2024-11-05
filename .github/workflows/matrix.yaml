@@ -2,6 +2,7 @@ name: MATRIX DEMO
 on: workflow_dispatch
 jobs:
   BUILD:
+    continue-on-error: true
     strategy:
         matrix:
           node-version: [12,14,16]
