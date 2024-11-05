@@ -1,5 +1,5 @@
 name: MATRIX DEMO
-on: work_dispatch
+on: workflow_dispatch
 jobs:
   Build:
     continue-on-error: true
@@ -22,4 +22,3 @@ jobs:
         run: npm ci
       - name: build project
         run: npm run build
-        
